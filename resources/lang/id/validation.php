@@ -35,12 +35,12 @@ return [
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
-    'digits' => ':attribute wajib :digits digit.',
+    'digits' => ':attribute harus :digits digit.',
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'The :attribute must be a valid email address.',
-    'exists' => ':attribute tidak ditemukan.',
+    'exists' => ':attribute tidak valid.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
@@ -58,7 +58,7 @@ return [
     'image' => ':attribute hanya dapat berupa gambar.',
     'in' => 'The selected :attribute is invalid.',
     'in_array' => 'The :attribute field does not exist in :other.',
-    'integer' => ':attribute wajib menggunakan angka.',
+    'integer' => ':attribute harus berupa angka bulat.',
     'ip' => 'The :attribute must be a valid IP address.',
     'ipv4' => 'The :attribute must be a valid IPv4 address.',
     'ipv6' => 'The :attribute must be a valid IPv6 address.',
@@ -91,10 +91,10 @@ return [
     ],
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => ':attribute wajib menggunakan angka.',
+    'numeric' => ':attribute harus berupa angka.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => ':attribute tidak boleh kosong.',
+    'required' => ':attribute wajib diisi.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -109,7 +109,7 @@ return [
         'array' => 'The :attribute must contain :size items.',
     ],
     'starts_with' => 'The :attribute must start with one of the following: :values',
-    'string' => 'The :attribute must be a string.',
+    'string' => ':attribute harus berupa teks.',
     'timezone' => 'The :attribute must be a valid zone.',
     'unique' => 'The :attribute has already been taken.',
     'uploaded' => 'The :attribute failed to upload.',
@@ -144,6 +144,6 @@ return [
     |
     */
 
-    'attributes' => [],
+    'atribut' => [],
 
 ];
