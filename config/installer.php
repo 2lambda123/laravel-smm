@@ -15,7 +15,7 @@ return [
     |
     */
     'core' => [
-        'minPhpVersion' => '7.2.0'
+        'minPhpVersion' => '7.3.0'
     ],
     'final' => [
         'key' => true,
@@ -24,6 +24,7 @@ return [
     'requirements' => [
         'php' => [
             'openssl',
+            'gd',
             'pdo',
             'mbstring',
             'tokenizer',
@@ -62,9 +63,9 @@ return [
     'environment' => [
         'form' => [
             'rules' => [
-                'app_name'              => 'required|string|max:50',
+                'app_name'              => 'required|string|max:255',
                 'environment'           => 'required|string|max:50',
-                'environment_custom'    => 'required_if:environment,other|max:50',
+                'environment_custom'    => 'nullable|string|max:255',
                 'app_debug'             => ['required'],
                 'app_log_level'         => 'required|string|max:50',
                 'app_url'               => 'required|url',
@@ -79,11 +80,11 @@ return [
                 'mail_port'             => 'required|string|max:50',
                 'mail_username'         => 'required|string|max:50',
                 'mail_password'         => 'required|string|max:50',
-                'mail_encryption'       => 'required|string|max:50',
+                'mail_encryption'       => 'nullable|string|max:50',
                 'pusher_app_id'         => 'max:50',
                 'pusher_app_key'        => 'max:50',
                 'pusher_app_secret'     => 'max:50',
-            ],
+                ],
         ],
     ],
 
@@ -104,7 +105,7 @@ return [
             'abort' => [
                 'type' => '404',
             ],
-            'dump' => [
+                'dump' => [
                 'data' => 'Dumping a not found message.',
             ]
         ],
